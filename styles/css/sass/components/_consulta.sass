@@ -1,0 +1,152 @@
+@import ../app/_colors
+
+.container-consulta
+    width: 1170px
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+    &::before
+        display: table
+        content: " "
+    .row-consulta
+        margin-right: -15px
+        margin-left: -15px
+        &::before
+            display: table
+            content: " "
+        h1
+            font-size: 1.7em
+            margin-top: 20px
+            margin-bottom: 10px
+            font-weight: 500
+            line-height: 1.1
+            color: inherit
+        .panel
+            margin-bottom: 20px
+            background-color: var(--color-white)
+            border: 1px solid transparent
+            border-radius: 4px
+            box-shadow: 0 1px 1px var(--box-shadow)
+        .panel-primary
+            border-color: var(--color-primary)
+            >.panel-heading
+                color: var(--color-white)
+                background-color: var(--color-primary)
+            .panel-heading
+                padding: 10px 15px
+                border-bottom: 1px solid transparent
+                border-top-left-radius: 3px
+                border-top-right-radius: 3px
+            .panel-body
+                padding: 15px
+                &::before
+                    display: table
+                    content: " "
+                .divBotonesFiltro
+                    margin-bottom: 20px
+                    white-space: nowrap
+                    text-align: center
+                    .btn-group
+                        position: relative
+                        display: inline-block
+                        vertical-align: middle
+                        &>.btn
+                            position: relative
+                            float: left
+                        &>.btn:first-child
+                            margin-left: 0
+                        &>.btn.active
+                            z-index: 2
+                        &>.btn.active:hover
+                            z-index: 2
+                        &>.btn:first-child:not(:last-child):not(.dropdown-toggle)
+                            border-top-right-radius: 0
+                            border-bottom-right-radius: 0
+                        .btn
+                            display: inline-block
+                            padding: 6px 12px
+                            margin-bottom: 0
+                            font-weight: 400
+                            line-height: 1.42857143
+                            text-align: center
+                            white-space: nowrap
+                            vertical-align: middle
+                            touch-action: manipulation
+                            cursor: pointer
+                            -webkit-user-select: none
+                            user-select: none
+                            background-image: none
+                            border: 1px solid transparent
+                            border-radius: 4px
+                .form-horizontal
+                    .form-group
+                        margin-right: -15px
+                        margin-left: -15px
+                        margin-bottom: 15px
+                        &::before
+                            display: table
+                            content: " "
+                        &::after
+                            clear: both
+                            display: table
+                            content: " "
+                    .divCriterioBusqueda
+                        margin-bottom: 0px
+                        &::before
+                            display: table
+                            content: " "
+                        &::after
+                            clear: both
+                            display: table
+                            content: " "
+                    .divConsultaCampo
+                        margin-left: 16.66666667%
+                        float: left
+                        width: 66.66666667%
+                        position: relative
+                        min-height: 1px
+                        padding-right: 15px
+                        padding-left: 15px
+                        .form-control
+                            display: block
+                            width: 100%
+                            height: 34px
+                            padding: 6px 12px
+                            margin-bottom: 10px
+                            font-size: 14px
+                            line-height: 1.42857143
+                            color: var(--color-dark)
+                            background-color: var(--color-white)
+                            border: 1px solid var(--color-info-light)
+                            border-radius: 4px
+                            -webkit-box-shadow: inset 0 1px 1px var(--box-shadow)
+                            box-shadow: inset 0 1px 1px var(--box-shadow)
+                            -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+                            -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+                            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+                            &:focus
+                                outline: 0
+                                border: 2px solid var(--color-primary)
+                    .text-center
+                        width: 100%
+                        display: flex
+                        text-align: center
+                        justify-content: center
+    .footer-consulta
+        text-align: center
+@media only screen and (max-width: 768px)
+    .container-consulta
+        width: 100%
+        padding-right: 15px
+        padding-left: 15px
+        margin-right: auto
+        margin-left: auto
+        .offset
+            position: relative
+            min-height: 1px
+            padding-right: 15px
+            padding-left: 15px
+        .divConsultaCampo
+            margin: 0 !important
+            width: 100% !important
