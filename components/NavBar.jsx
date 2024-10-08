@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import ChatBot from "./ChatBot";
+import TawkTo from "./TawkTo";
 
 export default function NavBar() {
   const [movilMenuOpen, setMovilMenuOpen] = useState(false);
@@ -127,7 +127,7 @@ export default function NavBar() {
                 </li>
               </ul>
             </nav>
-            <div className="item__action">
+            {/* <div className="item__action">
               <div className="action-container">
                 <div className="action__control">
                   <div className="control__container">
@@ -144,11 +144,12 @@ export default function NavBar() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </header>
-      <ChatBot />
+      {/* <ChatBot /> */}
+      <TawkTo></TawkTo>
     </>
   );
 }
